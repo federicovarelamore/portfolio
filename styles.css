@@ -91,7 +91,7 @@ h6 {
 
 /* ****** COMPONENTS ****** */
 
-/* ****** HERO IMAGE ****** */
+/* ****** Hero Image ****** */
 .hero-image {
   background-image: var(--hero-image);
   background-repeat: no-repeat;
@@ -192,6 +192,27 @@ h6 {
   }
 }
 
+/* ****** Habilities ****** */
+.habilities-container {
+  max-width: 1200px;
+  height: 15vh;
+}
+
+.habilities-ul {
+  padding-inline-start: 0;
+}
+
+.habilities-ul > li {
+  margin-bottom: 1rem;
+  display: flex;
+  font-size: 1rem;
+  list-style-type: none;
+}
+
+.habilities-ul > li:last-child {
+  margin-bottom: 0;
+}
+
 /* ****** UTILITIES ****** */
 
 .box-shadow-1 {
@@ -217,6 +238,39 @@ h6 {
 
 .none {
   display: none;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+.section {
+  padding: 2rem 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media screen and (min-width: 1024px) {
+  .text-lg-center {
+    text-align: center;
+  }
+
+  .text-lg-left {
+    text-align: left;
+  }
+
+  .text-lg-right {
+    text-align: right;
+  }
 }
 /* ****** SITE STYLES ****** */
 .header {
@@ -247,6 +301,12 @@ h6 {
 }
 
 @media screen and (min-width: 1024px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-content: center;
+  }
   .header {
     position: sticky;
     top: 0;
