@@ -260,6 +260,11 @@ h6 {
 }
 
 @media screen and (min-width: 1024px) {
+  .full-lg-screen {
+    width: 100%;
+    min-height: 100vh;
+  }
+
   .text-lg-center {
     text-align: center;
   }
@@ -306,6 +311,10 @@ h6 {
     grid-template-columns: repeat(3, 30%);
     justify-content: space-between;
     align-content: center;
+  }
+  .d-flex {
+    display: flex;
+    justify-content: center;
   }
   .header {
     position: sticky;
